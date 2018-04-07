@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("button").click(function ()
+            {
+                var div = $("div");
+                div.animate({ left: '100px' }, "slow");
+                div.animate({fontSize:'80px'},"slow");
+        });
+    });
+    </script>
+</head>
+<body>
+    <button>clickforAnimation</button>
+    <p>Animate</p>
+    <div style="background:green;width:500px;height:100px;position:absolute;">Hellooooooo</div>
+</body>
+</html>

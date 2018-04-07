@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+        $("p").remove(".test, .rem");
+    });
+    });
+    </script>
+    <style>
+        .test {
+            color: black;
+            font-size: 20px;
+        }
+
+        .rem {
+            color: deeppink;
+            font-size: 25px;
+        }
+   </style>
+</head>
+<body>
+    <p>paragraph</p>
+    <p class="test"> p element with class="test"</p>
+    <p class="test">p element with class="test"</p>
+    <p class="rem">p element with class="demo"</p>
+    <button>Remove all p elements with class="test" and class="rem"</button>
+</body>
+</html>

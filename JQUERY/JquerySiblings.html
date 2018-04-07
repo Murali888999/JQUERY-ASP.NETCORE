@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("h3").siblings("p").css({ "color": "darkblue", "border": "2px solid black" });
+            $("h2").next("p").css({ "color": "deeppink", "border": "2px solid green" });
+});
+    </script>
+    <style>
+        .siblings * 
+        {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body class="siblings">
+    <div>
+        div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <p>p</p>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+
+</body>
+</html>

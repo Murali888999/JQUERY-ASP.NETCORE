@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var v = $.noConflict();
+        v(document).ready(function ()
+        {
+            v("button").click(function()
+            {
+                v("h2").text("jquery is working..........")
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>avoiding conflicting using noConflict()</h2>
+    <button>click me</button>
+</body>
+</html>

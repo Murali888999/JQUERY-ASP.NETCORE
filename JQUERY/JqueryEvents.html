@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#test1").click(function(){
+                $(this).hide();
+            })
+            $("#test2").dblclick(function()
+            {
+                $(this).hide();
+            })
+            $("#test").mouseenter(function()
+            {
+                alert("Great country");
+            })
+            $("#test3").mouseleave(function () {
+                alert("i toooo..i will come again");
+            })
+            $("input").focus(function()
+            {
+                $(this).css("background-color","green");
+            })
+            $("#on").on({
+                click: function(){
+                    $(this).css("background-color", "yellow");
+                }  
+            });
+            });
+    </script>
+</head>
+<body>
+    <h2>byclicking the paragraph..para will be diasappear</h2>
+    <p id="test">India is </p>
+    <p id="test1">friends forever</p>
+    <p id="test2">something is better nothing </p>
+    <p id="test3">We miss you Sridevi </p>
+    <p id="on">how are you!!</p>
+    username:<input type="text" value="username" />
+    password:<input type="password" value="password" />
+</body>
+</html>

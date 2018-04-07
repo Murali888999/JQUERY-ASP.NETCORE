@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+             $("button").click(function(){
+             var txt = "";
+             txt += "Width of div: " + $("#d1").width() + "</br>";
+             txt += "Height of div: " + $("#d1").height() + "</br>";
+             txt += "Outer width of div: " + $("#d1").outerWidth() + "</br>";
+             txt += "Outer height of div: " + $("#d1").outerHeight();
+             $("#d1").html(txt);
+    });
+});
+    </script>
+    <style>
+        #d1 {
+            height: 200px;
+            width: 400px;
+            padding: 10px;
+            margin: 4px;
+            border: 1px solid pink;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <br>
+    <button>Display dimension</button>
+    <p>outerWidth()</p>
+    <p>outerHeight()</p>
+</body>
+</html>

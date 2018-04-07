@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function()
+            {
+                $("#test").css("color", "blue").slideDown(5000).slideUp(5000);
+            })
+        });
+    </script>
+</head>
+<body>
+    <p id="test">jqueryyyyyy</p>
+    <button>clickme</button>
+</body>
+</html>

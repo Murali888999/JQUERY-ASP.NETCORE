@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#id1").click(function()
+            {
+                alert("Text:" +$("#test").text());
+            })
+            $("#id2").click(function () {
+                alert("HTML:" +$("#test").html());
+            })
+            $("#id3").click(function()
+            {
+                alert("value:" + $("#test1").val());
+            })
+        });
+    </script>
+</head>
+<body>
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button  id="id1">show text</button>
+    <button id="id2">hide text</button>
+    <p>Name : <input type="text" id="test1" value="murali" /></p>
+    <button id="id3">show value</button>
+</body>
+</html>

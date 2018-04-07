@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#d1").click(function ()
+            {
+                $("#test1").text("Hello");
+                  });
+                    $("#d2").click(function()
+                    {
+                        $("#test2").html("<b>Hello form html</b>");
+                         });
+                             $("#d3").click(function(){
+                                 $("#test3").val("Murali Mohan");
+                 });
+            });
+    </script>
+</head>
+<body>
+
+    <p id="test1">paragraph.</p>
+    <p id="test2"> another paragraph</p>
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+    <button id="d1">SetText</button>
+    <button id="d2">Set HTML</button>
+    <button id="d3">Set Value</button>
+</body>
+</html>

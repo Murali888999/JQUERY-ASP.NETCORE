@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#name").hide();
+                $(".k").hide();
+                $("p:first").hide();
+                $("[href]").hide();
+                $("[target=_blank]".hide());              
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Hinding The Particular Element</h2>
+    <p id="name">hello all</p>
+    <p class="k">INDIA Is Greate Counrty</p>
+    <p>All INDINA's are brothers and systers</p>
+    <p>INDIA is great democratic country</p>
+    <p>INDIA won two cricket world cups</p>
+    <p><a href="www.facebook.com">FACEBOOK</a></p>
+    <p><a href="www.whatsapp.com">WHATSAPP</a></p>
+    <p><a href="www.youtube.com" target="_blank">YOUTUBE</a></p>
+    <button>click</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#id1").click(function()
+            {
+                $("p").append("<b>appended Text</b> .")
+            })
+            $("#id2").click(function () {
+                $("ol").append("<li>appended liste items</li> .")
+            })
+        });
+    </script>
+</head>
+<body>
+    <p>paragraph</p>
+    <p>this is another paragraph</p>
+    <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <button id="id1">append text</button>
+    <button id="id2">append list items</button>
+</body>
+</html>

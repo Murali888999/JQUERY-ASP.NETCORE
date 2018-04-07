@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#flip").click(function()
+            {
+                $("#test").slideDown("5000")
+            })
+            $("#stop").click(function(){
+                $("test").stop();
+            })
+            });
+    </script>
+    <style>
+        #test,#flip{
+            padding:4px;
+            background-color:aqua;
+            text-align:center;
+            border:solid 1px black;
+        }
+        #test{
+            padding:40px;
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="stop">stopslide</button>
+    <div id="flip">helloooooooo</div>
+    <div id="test">This is Murali</div>
+</body>
+</html>

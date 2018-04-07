@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+                $("#d1").fadeTo("slow", 0.2);
+                $("#d2").fadeTo("slow", 0.04);
+                $("#d3").fadeTo("slow", 0.17);
+    });
+});
+    </script>
+</head>
+<body>
+
+    <p>FadeTo</p>
+    <button>Click to fadeboxes</button><br><br>
+    <div id="d1" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="d2" style="width:80px;height:80px;background-color:green;"></div><br>
+    <div id="d3" style="width:80px;height:80px;background-color:blue;"></div>
+</body>
+</html>

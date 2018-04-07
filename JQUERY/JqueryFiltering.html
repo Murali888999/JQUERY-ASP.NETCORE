@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("div").first().css("background-color", "deeppink");
+            $("p").eq(2).css("background-color", "green");
+            $("p").not(".not").css("background-color", "green"); 
+});
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <div style="border: 1px solid blue;">
+        <p>A paragraph</p>
+        <p>Another paragraph</p>
+    </div>
+    <br>
+    <div style="border: 1px solid black;">
+        <p>A paragraph</p>
+        <p>Another paragraph</p>
+    </div>
+    <br>
+    <div style="border: 1px solid red;">
+        <p>A paragraph</p>
+        <p>Another paragraph</p>
+    </div>
+    <p class="not">Good morning</p>
+    <p>Have a nice day</p>
+    <p class="not">dear</p>
+</body>
+</html>
